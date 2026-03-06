@@ -5,7 +5,7 @@ export default function App() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [token, setToken] = useState(null);
+  const [_token, setToken] = useState(null);
 
   async function handleLogin(e:any) {
     e.preventDefault();
