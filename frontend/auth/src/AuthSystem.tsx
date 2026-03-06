@@ -7,7 +7,7 @@ export default function App() {
   const [password, setPassword] = useState("");
   const [token, setToken] = useState(null);
 
-  async function handleLogin(e) {
+  async function handleLogin(e:any) {
     e.preventDefault();
 
     const res = await fetch("http://localhost:5000/login", {
@@ -26,7 +26,7 @@ export default function App() {
     }
   }
 
-  async function handleSignup(e) {
+  async function handleSignup(e:any) {
     e.preventDefault();
 
     const res = await fetch("http://localhost:5000/signup", {
